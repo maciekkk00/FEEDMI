@@ -11,5 +11,4 @@ Router::get('first', 'DefaultController');
 Router::get('cook', 'DefaultController');
 Router::get('recipes', 'DefaultController');
 Router::get('share', 'DefaultController');
-// TODO
 Router::run($path);
