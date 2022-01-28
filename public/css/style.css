@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/public/img/foodwallpaper131-1920x1080.jpg');
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.login>div>img {
+    height: 10em;
+    margin: 2em;
+}
+
+.logo {
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+
+    top: 403px;
+    left: 744px;
+    width: 433px;
+    height: 175px;
+
+    background-image: url('/public/img/zloteTlo.png');
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 91px;
+}
+
+
+form.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    top: 597px;
+    left: 762px;
+    width: 397px;
+    height: 330px;
+
+    background-image: url('/public/img/zloteTlo.png');
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 56px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+    
+}
+
+form.reg {
+    height: 630px;
+}
+
+.button-login {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 816px;
+    left: 868px;
+    width: 185px;
+    height: 52px;
+    
+
+    background: transparent radial-gradient(closest-side at 50% 50%, #F1F1F1D8 0%, #ECBE05 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 24px;
+
+    font: normal normal bold 20px/25px Miriam CLM;
+    letter-spacing: 0px;
+    color: black;
+    text-shadow: 0px 3px 6px #00000029;
+    text-transform: uppercase;
+    opacity: 1;
+    filter: blur(0px);
+    margin-bottom: 1em;
+    
+}
+
+.button-login:hover {
+    background: #ECBE05;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+}
+
+@media only screen and (max-device-width: 420px) {
+    .container {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+ 
+    * {
+        font-size: 30px;
+    }
+
+    form.login {
+        width: 150%;
+        height: 150%;
+        
+    }
+
+    .logo {
+        width: 75%;
+        height: 10%;
+        
+    }
+
+    form {
+        width: 80%;
+        height: 120%;
+        margin-left: -25%;
+        margin-right: 0%;
+        margin-top: 10%;
+        
+    }
+
+    img {
+        height: 7em;
+        margin: 1em;
+    }
+
+    .button-login {
+        top: 716px;
+        left: 868px;
+        width: 185px;
+        height: 75px;
+    }
+
+    .buttonLogin:hover {
+        background: #ECBE05;
+    }
+}
+
+.logo2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    width: 60%;
+    height: 10%;
+    background-image: url('/public/img/zloteTlo.png');
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 91px;
+    margin-top: 10%;
+    margin-left: 20%;
+    
+}
+
+nav {
+    width: 20vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border-right: 1px solid gold;
+}
+
+main {
+    width: 80vw;
+}
+
+.logo2>img {
+    height: 100%;
+    width: 80%;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 2em;
+}
+
+li i {
+    font-size: 1.75em;
+}
+
+.button {
+    background: transparent radial-gradient(closest-side at 50% 50%, #F1F1F1D8 0%, #ECBE05 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 24px;
+    margin-left: 1em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: black;
+    padding: 0.2em;
+    width: 60%;
+    margin-top: 1em;
+}
+
+.button:hover {
+    background: #ECBE05;
+}
+
+ul {
+    list-style-type: none;
+    color: gold;
+    font: normal normal bold 16px/18px Miriam CLM;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    width: calc(100% - 40px);
+    position: relative;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+li:last-child {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.fa, .fas {
+    width: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    border-bottom: 1px solid gold;
+}
+
+.username {
+    text-align: center;
+    font: normal normal bold 23px/27px Miriam CLM;
+    letter-spacing: 0px;
+    color: #FFFFFFD9;
+    text-shadow: 0px 3px 6px #00000029;
+    text-transform: uppercase;
+    width: 20%;
+}
+
+.username>i {
+    padding: 1em;
+}
+
+.search-bar {
+    width: 50%;
+}
+
+.search-bar>form>input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #00000029;
+    border-radius: 27px;
+    opacity: 0.84;
+    width: 100%;
+    text-align: left;
+    color: gray;
+    margin: 1;
+    box-sizing: border-box;
+}
