@@ -1,9 +1,9 @@
 section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
     padding: 2em;
-    
+    overflow: auto;
 }
 
 .base-container {
@@ -15,161 +15,94 @@ section {
     background-image: url('/public/img/truskawki.jpg');
 }
 
-.buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    top: 354px;
-    left: 5px;
-    width: 335px;
-    height: 52px;
+.add-recipe {
     background-image: url('/public/img/zloteTlo.png');
-    box-shadow: inset 0px 6px 6px #00000029;
-    border: 1px solid #707070;
-    border-radius: 24px;
-    opacity: 1;
-
-    position: relative; top: 80px;
-
-    font: normal normal bold 20px/25px Miriam CLM;
-    letter-spacing: 0px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 19px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    width: 20%;
+    border: none;
     color: black;
-    text-shadow: 0px 3px 6px #00000029;
-    text-transform: uppercase;
-    opacity: 1;
-    filter: blur(0px);
+    margin: 1em;
+    line-height: 2.5em;
 }
 
-.buttons:hover {
-    opacity: 90%;
+.recipes>div>img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
 }
 
-.b1 {
+.recipes>div>div {
+    height: 50%;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(/public/img/zloteTlo.png);
+    border-radius: 0 0 1em 1em;
+}
+
+.recipes>div {
+    border: 1px solid gold;
+    border-radius: 1em 1em 1em 1em;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#s1.fas.fa-heart {
+    position: absolute;
+    top: 492px;
+    left: 500px;
+    font-size: 1.5em;
+}
+#s2.fas.fa-heart {
+    position: absolute;
+    top: 492px;
+    left: 1000px;
+    font-size: 1.5em;
+}
+#s3.fas.fa-heart {
+    position: absolute;
+    top: 492px;
+    left: 1500px;
+    font-size: 1.5em;
+}
+
+#k1.fas.fa-minus-square {
+    position: absolute;
+    top: 492px;
+    left: 750px;
+    font-size: 1.5em;
+}
+
+#k2.fas.fa-minus-square {
+    position: absolute;
+    top: 492px;
+    left: 1270px;
+    font-size: 1.5em;
+}
+
+#k3.fas.fa-minus-square {
+    position: absolute;
+    top: 492px;
+    left: 1750px;
+    font-size: 1.5em;
+}
+
+section.recipe-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    top: 401px;
-    left: 5px;
-    width: 335px;
-    height: 330px;
-    opacity: 1;
-
-    position: relative; top: 100px;
-
-    font: normal normal bold 40px/45px Miriam CLM;
-    letter-spacing: 0px;
-    color: black;
-    text-shadow: 0px 3px 6px #00000029;
-    text-transform: uppercase;
-    opacity: 1;
-    filter: blur(0px);
-}
-.b1:hover {
-    opacity: 90%;
 }
 
-.button1{
-    background-image: url('/public/img/kurczakk.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-}
-
-.button2 {
-    background-image: url('/public/img/ryzz.png');
-}
-
-.button3 {
-    background-image: url('/public/img/dzik.png');
-}
-
-.button4 {
-    background-image: url('/public/img/schabowe.png');
-}
-
-.b2{
+.recipe-form > form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    top: 500px;
-    left: 5px;
-    width: 335px;
-    height: 60px;
-
-    background-image: url('/public/img/zloteTlo.png');
-    box-shadow: inset 0px 6px 6px #00000029;
-    opacity: 1;
-
-    position: relative; top: 68px;
-
-    font: normal normal bold 20px/25px Miriam CLM;
-    letter-spacing: 0px;
-    color: black;
-    text-shadow: 0px 3px 6px #00000029;
-    text-transform: uppercase;
-    opacity: 1;
-    filter: blur(0px);
 }
 
-.b2:hover {
-    opacity: 90%;
-}
 
-/*@media only screen and (max-device-width: 420px) {
-    .container {
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-    }
- 
-    * {
-        font-size: 30px;
-    }
-
-    form.login {
-        width: 150%;
-        height: 150%;
-        
-    }
-
-    .logo {
-        width: 75%;
-        height: 10%;
-        
-    }
-
-    form {
-        width: 80%;
-        height: 120%;
-        margin-left: -25%;
-        margin-right: 0%;
-        margin-top: 10%;
-        
-    }
-
-    img {
-        height: 7em;
-        margin: 1em;
-    }
-
-    .buttonLogin {
-        top: 716px;
-        left: 868px;
-        width: 185px;
-        height: 75px;
-    }
-
-    .buttonLogin:hover {
-        background: #ECBE05;
-    }
-}
-
-    
-
- 
