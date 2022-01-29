@@ -8,6 +8,7 @@ $path = parse_url( $path, PHP_URL_PATH);
 Router::get('index', 'DefaultController');
 Router::get('register', 'DefaultController');
 Router::get('first', 'DefaultController');
+Router::post('login', 'SecurityController');
 Router::get('cook', 'DefaultController');
 Router::get('recipes', 'DefaultController');
 Router::get('share', 'DefaultController');
