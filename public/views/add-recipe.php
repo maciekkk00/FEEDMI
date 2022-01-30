@@ -57,9 +57,8 @@
                         ?>
                         <input name="title" type="text" placeholder="title">
                         <textarea name="description" rows="5" placeholder="description"></textarea>
-
                         <input type="file" name="file">
-                        <button type="submit">send</button>
+                        <button class ="add-recipe" type="submit">send</button>
                     </form>
             </section>
         </main>

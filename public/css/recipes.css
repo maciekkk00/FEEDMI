@@ -28,6 +28,10 @@ section {
     line-height: 2.5em;
 }
 
+.add-recipe:hover {
+    opacity: 90%;
+}
+
 .recipes>div>img {
     height: 50%;
     width: 100%;
@@ -54,55 +58,33 @@ section {
     flex-direction: column;
     justify-content: space-between;
 }
-#s1.fas.fa-heart {
-    position: absolute;
-    top: 492px;
-    left: 500px;
-    font-size: 1.5em;
-}
-#s2.fas.fa-heart {
-    position: absolute;
-    top: 492px;
-    left: 1000px;
-    font-size: 1.5em;
-}
-#s3.fas.fa-heart {
-    position: absolute;
-    top: 492px;
-    left: 1500px;
-    font-size: 1.5em;
-}
-
-#k1.fas.fa-minus-square {
-    position: absolute;
-    top: 492px;
-    left: 750px;
-    font-size: 1.5em;
-}
-
-#k2.fas.fa-minus-square {
-    position: absolute;
-    top: 492px;
-    left: 1270px;
-    font-size: 1.5em;
-}
-
-#k3.fas.fa-minus-square {
-    position: absolute;
-    top: 492px;
-    left: 1750px;
-    font-size: 1.5em;
-}
 
 section.recipe-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .recipe-form > form {
     display: flex;
     flex-direction: column;
 }
+
+textarea, input {
+      background-color: yellow;
+      border: none;
+      border-bottom: 1px solid black;
+      padding: 1em;
+      margin: 1em;
+      width: 50%;
+      border-radius: 26px;
+  }
+
+.recipe-form > h1 {
+    color: gold;
+}
+
+
 
 

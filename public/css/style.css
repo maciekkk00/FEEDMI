@@ -104,7 +104,7 @@ form.reg {
     background: #ECBE05;
 }
 
-input, textarea {
+input {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;

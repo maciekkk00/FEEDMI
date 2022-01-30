@@ -57,10 +57,6 @@
                         <p>An effective and tasty dish that will impress your guests?
                             Try this recipe and surprise your guests with a tasty surprise!</p>
                     </div>
-                    <div class="social-section">
-                        <i id="s1" class="fas fa-heart">823</i>
-                        <i id="k1" class="fas fa-minus-square">64</i>
-                    </div>
                 </div>
             </div>
             <div id="recipe-2">
@@ -69,10 +65,6 @@
                     <div>
                         <h2>RICE WITH MUSHROOMS</h2>
                         <p>An idea for an uncomplicated, one-pot dish - delicate arborio rice with fried mushrooms and garlic.</p>
-                        <div class="social-section">
-                    </div>
-                        <i id="s2" class="fas fa-heart">617</i>
-                        <i id="k2" class="fas fa-minus-square">44</i>
                     </div>
                 </div>
             </div>
@@ -83,23 +75,16 @@
                         <h2>WILD BOAR STEAK</h2>
                         <p>Aromatic wild boar steak with refreshing mint? This is the perfect combination that will delight all game lovers!</p>
                     </div>
-                    <div class="social-section">
-                        <i id="s3" class="fas fa-heart">448</i>
-                        <i id="k3" class="fas fa-minus-square">27</i>
+                </div>
+            </div>
+            <div id="recipe-4">
+                <img src="/public/uploads/<?= $recipe->getImage() ?>">
+                <div>
+                    <div>
+                        <h2><?= $recipe->getTitle() ?></h2>
+                        <p><?= $recipe->getDescription() ?></p>
                     </div>
                 </div>
-               <!-- <div id="recipe-4">
-                    <img src="/public/uploads/<?= $recipe->getImage() ?>">
-                    <div>
-                        <div>
-                            <h2><?= $recipe->getTitle() ?></h2>
-                            <p><?= $recipe->getDescription() ?></p>
-                        </div>
-                        <div class="social-section">
-                            <i id="s3" class="fas fa-heart">448</i>
-                            <i id="k3" class="fas fa-minus-square">27</i>
-                        </div>
-                    </div>-->
             </div>
         </section>
     </main>
