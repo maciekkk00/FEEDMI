@@ -72,19 +72,15 @@ section.recipe-form {
 }
 
 textarea, input {
-      background-color: yellow;
-      border: none;
-      border-bottom: 1px solid black;
-      padding: 1em;
-      margin: 1em;
-      width: 50%;
-      border-radius: 26px;
-  }
+    background-color: yellow;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+    border-radius: 26px;
+}
 
 .recipe-form > h1 {
     color: gold;
 }
-
-
-
-
