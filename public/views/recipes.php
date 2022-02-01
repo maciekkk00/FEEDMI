@@ -77,6 +77,7 @@
                     </div>
                 </div>
             </div>
+            <?php foreach($recipes as $recipe): ?>
             <div id="recipe-4">
                 <img src="/public/uploads/<?= $recipe->getImage() ?>">
                 <div>
@@ -86,6 +87,7 @@
                     </div>
                 </div>
             </div>
+            <?php endforeach; ?>
         </section>
     </main>
 </div>

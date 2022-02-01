@@ -24,11 +24,6 @@ class DefaultController extends AppController {
         $this->render('cook');
     }
 
-    public function recipes()
-    {
-        $this->render('recipes');
-    }
-
     public function share()
     {
         $this->render('share');

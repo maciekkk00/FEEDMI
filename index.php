@@ -11,7 +11,7 @@ Router::get('first', 'DefaultController');
 Router::post('login', 'SecurityController');
 Router::post('addRecipe', 'RecipeController');
 Router::get('cook', 'DefaultController');
-Router::get('recipes', 'DefaultController');
+Router::get('recipes', 'RecipeController');
 Router::get('share', 'DefaultController');
 
 Router::run($path);
