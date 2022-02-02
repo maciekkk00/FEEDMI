@@ -14,5 +14,7 @@ Router::get('cook', 'DefaultController');
 Router::get('recipes', 'RecipeController');
 Router::get('share', 'DefaultController');
 Router::post('search', 'RecipeController');
+Router::get('like', 'RecipeController');
+Router::get('dislike', 'RecipeController');
 
 Router::run($path);

@@ -60,6 +60,16 @@ class RecipeController extends AppController {
         }
     }
 
+    public function like(int $id) {
+        $this->recipeRepository->like($id);
+        http_response_code(200);
+    }
+
+    public function dislike(int $id) {
+        $this->recipeRepository->dislike($id);
+        http_response_code(200);
+    }
+
     private function validate(array $file): bool
     {
         if($file['size'] > self::MAX_FILE_SIZE) {

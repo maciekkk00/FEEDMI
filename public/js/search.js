@@ -43,7 +43,7 @@ function createRecipe(recipe) {
     description.innerHTML = recipe.description;
     const like = clone.querySelector(".fa-heart");
     like.innerText = recipe.like;
-    const dislike = clone.querySelector(".fa-minus-square");
+    const dislike = clone.querySelector(".fa-thumbs-down");
     dislike.innerText = recipe.dislike;
 
     recipeContainer.appendChild(clone);
