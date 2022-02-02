@@ -17,7 +17,10 @@ class Router {
     }
 
     public static function run ($url) {
-        $action = explode("/", $url)[0];
+
+        $urlParts = explode("/", $url);
+        $action = $urlParts[0];
+
         if (!array_key_exists($action, self::$routes)) {
             die("Wrong url!");
         }
@@ -25,7 +28,8 @@ class Router {
         $controller = self::$routes[$action];
         $object = new $controller;
 
+        $id = $urlParts[1] ?? '';
 
-        $object->$action();
+        $object->$action($id);
     }
 }

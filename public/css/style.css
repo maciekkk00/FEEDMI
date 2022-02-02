@@ -286,7 +286,7 @@ header {
     width: 50%;
 }
 
-.search-bar>form>input {
+.search-bar>input {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: inset 0px 3px 6px #00000029;
     border-radius: 27px;
@@ -296,4 +296,15 @@ header {
     color: gray;
     margin: 1;
     box-sizing: border-box;
+}
+
+.no-valid {
+    border: 3px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
+}
+
+.logout {
+    height: 2em;
 }

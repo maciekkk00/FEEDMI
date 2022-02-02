@@ -2,6 +2,7 @@
 
 require_once 'AppController.php';
 require_once __DIR__ .'/../models/Recipe.php';
+require_once __DIR__.'/../repository/RecipeRepository.php';
 
 class RecipeController extends AppController {
 
@@ -10,6 +11,19 @@ class RecipeController extends AppController {
     const UPLOAD_DIRECTORY = '/../../public/uploads/';
 
     private $messages = [];
+    private $recipeRepository;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->recipeRepository = new RecipeRepository();
+    }
+
+    public function recipes()
+    {
+        $recipes=$this->recipeRepository->getRecipes();
+        $this->render('recipes', ['recipes' => $recipes]);
+    }
 
     public function addRecipe()
     {
@@ -21,10 +35,39 @@ class RecipeController extends AppController {
             );
 
             $recipe = new Recipe($_POST['title'], $_POST['description'], $_FILES['file']['name']);
+            $this->recipeRepository->addRecipe($recipe);
 
-            return $this->render('recipes', ['messages' => $this->messages, 'recipe' => $recipe]);
+            return $this->render('recipes', [
+                'recipes' => $this->recipeRepository->getRecipes(),
+                'messages' => $this->messages, 'recipe' => $recipe
+            ]);
         }
-        $this->render('add-recipe', ['messages' => $this->messages]);
+        return $this->render('add-recipe', ['messages' => $this->messages]);
+    }
+
+    public function search()
+    {
+        $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
+
+        if ($contentType === "application/json") {
+            $content = trim(file_get_contents("php://input"));
+            $decoded = json_decode($content, true);
+
+            header('Content-type: application/json');
+            http_response_code(200);
+
+            echo json_encode($this->recipeRepository->getRecipeByTitle($decoded['search']));
+        }
+    }
+
+    public function like(int $id) {
+        $this->recipeRepository->like($id);
+        http_response_code(200);
+    }
+
+    public function dislike(int $id) {
+        $this->recipeRepository->dislike($id);
+        http_response_code(200);
     }
 
     private function validate(array $file): bool

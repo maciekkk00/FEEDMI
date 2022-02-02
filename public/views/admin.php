@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="/public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/recipes.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/first.css">
     <script src="https://kit.fontawesome.com/8df2c6e6d4.js" crossorigin="anonymous"></script>
-    <title>RECIPES</title>
+    <title>FIRST</title>
 </head>
 
 <body>
@@ -30,6 +30,10 @@
                 <a href="/recipes" class="button">dishes</a>
             </li>
             <li>
+                <i class="fas fa-user-shield"></i>
+                <a href="#" class="button">admin</a>
+            </li>
+            <li>
                 <i class="fas fa-cog"></i>
                 <a href="/settings" class="button">settings</a>
             </li>
@@ -46,21 +50,13 @@
                 username <i class="fas fa-smile"></i>
             </div>
         </header>
-        <section class="recipe-form">
-            <h1>UPLOAD</h1>
-            <form action="addRecipe" method="POST" ENCTYPE="multipart/form-data">
-                <?php if(isset($messages)) {
-                    foreach ($messages as $message) {
-                        echo $message;
-                    }
-                }
-                ?>
-                <input name="title" type="text" placeholder="title">
-                <textarea name="description" rows="5" placeholder="description"></textarea>
-                <input type="file" name="file">
-                <button class ="add-recipe" type="submit">send</button>
-            </form>
+        <section>
+            <a href="/cook" class="buttons button1">WHAT TO COOK</a>
+            <a href="/recipes" class="buttons button2">RECIPES</a>
+            <a href="/share" class="buttons button3">SHARE</a>
         </section>
     </main>
 </div>
 </body>
+
+

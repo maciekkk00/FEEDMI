@@ -21,7 +21,7 @@
             <input name="email" type="text" placeholder="email@email.com">
             <input name="password" type="password" placeholder="password">
             <button type="submit" class="button-login">LOGIN</button>
-            <a href="register.php" class="button-login">REGISTER</a>
+            <a href="/register" class="button-login">REGISTER</a>
         </form>
     </div>
 </div>
