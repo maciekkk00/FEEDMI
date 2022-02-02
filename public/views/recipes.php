@@ -18,7 +18,7 @@
         <ul>
             <li>
                 <i class="fas fa-home"></i>
-                <a href="first.php" class="button">home</a>
+                <a href="/first" class="button">home</a>
             </li>
             <li>
                 <i class="fas fa-address-card"></i>
@@ -30,11 +30,11 @@
             </li>
             <li>
                 <i class="fas fa-utensils"></i>
-                <a href="#" class="button">dishes</a>
+                <a href="/recipes" class="button">dishes</a>
             </li>
             <li>
                 <i class="fas fa-cog"></i>
-                <a href="#" class="button">settings</a>
+                <a href="/settings" class="button">settings</a>
             </li>
         </ul>
     </nav>

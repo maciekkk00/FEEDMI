@@ -28,4 +28,14 @@ class DefaultController extends AppController {
     {
         $this->render('share');
     }
+
+    public function admin()
+    {
+        $this->render('admin');
+    }
+
+    public function settings()
+    {
+        $this->render('settings');
+    }
 }

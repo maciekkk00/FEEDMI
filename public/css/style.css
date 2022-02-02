@@ -304,3 +304,7 @@ header {
     box-shadow: 0 0 0.2em red;
     outline: none;
 }
+
+.logout {
+    height: 2em;
+}
