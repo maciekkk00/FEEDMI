@@ -13,5 +13,6 @@ Router::post('addRecipe', 'RecipeController');
 Router::get('cook', 'DefaultController');
 Router::get('recipes', 'RecipeController');
 Router::get('share', 'DefaultController');
+Router::post('search', 'RecipeController');
 
 Router::run($path);
