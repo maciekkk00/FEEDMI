@@ -10,7 +10,7 @@
               <img src="/public/img/logo.svg">
         </div>
         <div class="login-container">
-            <form class="login reg" action="register" method="POST">
+            <form class="login reg" action="adduser" method="POST">
                 <div class="messages">
                     <?php
                     if(isset($messages)){

@@ -34,4 +34,28 @@ class SecurityController extends AppController {
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/first");
     }
+
+    public function adduser(){
+
+        $userRepository = new UserRepository();
+
+        if (!$this->isPost()) {
+            return $this->render('register');
+        }
+
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $name = $_POST['name'];
+        $surname = $_POST['surname'];
+
+
+
+        $user=new User($email, $password, $name, $surname);
+        $userRepository->addUser($user);
+
+        $url = "http://$_SERVER[HTTP_HOST]";
+        header("Location: {$url}/first");
+
+
+    }
 }
