@@ -9,7 +9,7 @@ class RecipeRepository extends Repository
     public function getRecipe(int $id): ?Recipe
     {
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM recipe WHERE id = :id
+            SELECT * FROM recipe WHERE id_recipe = :id
         ');
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
@@ -36,7 +36,7 @@ class RecipeRepository extends Repository
         ');
 
         //TODO you should get this value from logged user session
-        $assignedById = 1;
+        $assignedById = 11;
 
         $stmt->execute([
             $recipe->getTitle(),
@@ -64,7 +64,7 @@ class RecipeRepository extends Repository
                 $recipe['image'],
                 $recipe['like'],
                 $recipe['dislike'],
-                $recipe['id']
+                $recipe['id_recipe']
             );
         }
         return $result;
@@ -85,7 +85,7 @@ class RecipeRepository extends Repository
 
     public function like(int $id) {
         $stmt = $this->database->connect()->prepare('
-            UPDATE recipes SET "like" = "like" + 1 WHERE id = :id
+            UPDATE recipes SET "like" = "like" + 1 WHERE id_recipe = :id
          ');
 
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
@@ -94,7 +94,7 @@ class RecipeRepository extends Repository
 
     public function dislike(int $id) {
         $stmt = $this->database->connect()->prepare('
-            UPDATE recipes SET dislike = dislike + 1 WHERE id = :id
+            UPDATE recipes SET dislike = dislike + 1 WHERE id_recipe = :id
          ');
 
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);

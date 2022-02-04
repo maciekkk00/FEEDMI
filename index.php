@@ -19,4 +19,6 @@ Router::get('dislike', 'RecipeController');
 Router::get('admin', 'DefaultController');
 Router::get('settings', 'DefaultController');
 
+Router::post('adduser', 'SecurityController');
+
 Router::run($path);
