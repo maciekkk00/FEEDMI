@@ -84,3 +84,8 @@ textarea, input {
 .recipe-form > h1 {
     color: gold;
 }
+
+#add{
+    background: none;
+    border: none;
+}

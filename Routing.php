@@ -27,7 +27,6 @@ class Router {
 
         $controller = self::$routes[$action];
         $object = new $controller;
-
         $id = $urlParts[1] ?? '';
 
         $object->$action($id);

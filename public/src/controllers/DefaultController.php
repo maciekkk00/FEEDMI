@@ -4,38 +4,77 @@ require_once 'AppController.php';
 
 class DefaultController extends AppController {
 
+    private $messages = [];
+
+    public function isLoged()
+    {
+        if (!isset($_COOKIE['id_session']))
+            return false;
+        if (is_null($this->getSession()))
+        {
+            $securityController = new SecurityController();
+            $securityController->stopSession();
+            $this->messages[] = 'Your session expired!';
+            return false;
+        }
+        return true;
+    }
+
     public function login()
     {
-        $this->render('login');
+        if (!$this->isLoged())
+            $this->render('login', ['messages' => $this->messages]);
+        else
+            $this->first();
     }
 
     public function register()
     {
-        $this->render('register');
+        if (!$this->isLoged())
+            $this->render('register', ['messages' => $this->messages]);
+        else
+            $this->first();
     }
 
     public function first()
     {
-        $this->render('first');
+        if ($this->isLoged())
+            $this->render('first');
+        else
+            $this->login();
     }
 
     public function cook()
     {
-        $this->render('cook');
+        if ($this->isLoged())
+            $this->render('cook');
+        else
+            $this->login();
     }
 
     public function share()
     {
-        $this->render('share');
+        if ($this->isLoged())
+            $this->render('share');
+        else
+            $this->login();
     }
 
     public function admin()
     {
-        $this->render('admin');
+        if ($this->isLoged())
+            $this->render('admin');
+        else
+            $this->login();
     }
 
     public function settings()
     {
-        $this->render('settings');
+        if ($this->isLoged())
+            $this->render('settings');
+        else
+            $this->login();
     }
+
+
 }

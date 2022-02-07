@@ -105,7 +105,8 @@ form.reg {
 }
 
 input {
-    background-color: transparent;
+    background-color: white;
+    border-radius: 2em;
     border: none;
     border-bottom: 1px solid black;
     padding: 1em;

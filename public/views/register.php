@@ -25,7 +25,6 @@
                 <input name="confirmedPassword" type="password" placeholder="confirm password">
                 <input name="name" type="text" placeholder="name">
                 <input name="surname" type="text" placeholder="surname">
-                <input name="phone" type="text" placeholder="phone">
                 <button type="submit" class="button-login">REGISTER</button>
                 <a href="/login" class="button-login">BACK</a>
             </form>
