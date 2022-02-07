@@ -36,7 +36,8 @@ class RecipeRepository extends Repository
         ');
 
         //TODO you should get this value from logged user session
-        $assignedById = 11;
+        $userRepository = new UserRepository();
+        $assignedById = $userRepository->getUserSession($_COOKIE['id_session']);
 
         $stmt->execute([
             $recipe->getTitle(),

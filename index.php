@@ -20,5 +20,6 @@ Router::get('admin', 'DefaultController');
 Router::get('settings', 'DefaultController');
 
 Router::post('adduser', 'SecurityController');
+Router::post('logout', 'SecurityController');
 
 Router::run($path);

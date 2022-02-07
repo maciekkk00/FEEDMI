@@ -20,8 +20,10 @@
                 }
                 ?>
             </div>
-            <a href="/login" class="button-login">LOG OUT</a>
-            <a href="/first" class="button-login">BACK</a>
+            <form class="logout" action="logout" method="POST">
+                <button class="button-login" type="submit">Log out</button>
+                <a href="/first" class="button-login">BACK</a>
+            </form>
         </form>
     </div>
 </div>
