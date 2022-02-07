@@ -44,8 +44,12 @@
                     <input placeholder="search recipe">
             </div>
             <div class="add-recipe">
-                <i class="fas fa-plus"></i>
-                Add recipe
+                <form class="add-button" action="addRecipe" method="post">
+                    <button id="add">
+                        <i class="fas fa-plus"></i>
+                        Add recipe
+                    </button>
+                </form>
             </div>
         </header>
         <section class="recipes">

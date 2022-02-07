@@ -81,5 +81,4 @@ class SecurityController extends AppController {
         $this->stopSession();
         $this->render('login');
     }
-
 }

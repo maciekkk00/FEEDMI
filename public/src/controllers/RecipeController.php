@@ -22,7 +22,12 @@ class RecipeController extends AppController {
     public function recipes()
     {
         $recipes=$this->recipeRepository->getRecipes();
-        $this->render('recipes', ['recipes' => $recipes]);
+        $defaultController = new DefaultController();
+        if ($defaultController->isLoged())
+            $this->render('recipes', ['recipes' => $recipes]);
+        else
+            $defaultController->login();
+
     }
 
     public function addRecipe()
@@ -42,7 +47,12 @@ class RecipeController extends AppController {
                 'messages' => $this->messages, 'recipe' => $recipe
             ]);
         }
-        return $this->render('add-recipe', ['messages' => $this->messages]);
+        $defaultController=new DefaultController();
+
+        if ($defaultController->isLoged())
+            return $this->render('add-recipe', ['messages' => $this->messages]);
+        else
+            $defaultController->login();
     }
 
     public function search()

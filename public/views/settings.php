@@ -10,7 +10,7 @@
         <img src="/public/img/logo.svg">
     </div>
     <div class="login-container">
-        <form class="login logout" action="register" method="POST">
+        <form class="login logout" action="logout" method="POST">
             <div class="messages">
                 <?php
                 if(isset($messages)){
@@ -20,10 +20,9 @@
                 }
                 ?>
             </div>
-            <form class="logout" action="logout" method="POST">
-                <button class="button-login" type="submit">Log out</button>
-                <a href="/first" class="button-login">BACK</a>
-            </form>
+
+            <button class="button-login" type="submit">Log out</button>
+            <a href="/first" class="button-login">BACK</a>
         </form>
     </div>
 </div>

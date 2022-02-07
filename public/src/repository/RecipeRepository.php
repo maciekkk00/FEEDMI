@@ -32,19 +32,19 @@ class RecipeRepository extends Repository
         $date = new DateTime();
         $stmt = $this->database->connect()->prepare('
             INSERT INTO recipes (title, description, image, created_at, id_assigned_by)
-            VALUES (?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, getIDbyEmail(?))
         ');
 
         //TODO you should get this value from logged user session
         $userRepository = new UserRepository();
-        $assignedById = $userRepository->getUserSession($_COOKIE['id_session']);
+        $assignedByEmail = $userRepository->getUserSession($_COOKIE['id_session'])->getEmail();
 
         $stmt->execute([
             $recipe->getTitle(),
             $recipe->getDescription(),
             $recipe->getImage(),
             $date->format('Y-m-d'),
-            $assignedById
+            $assignedByEmail
         ]);
     }
 
