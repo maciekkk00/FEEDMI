@@ -1,0 +1,91 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    padding: 2em;
+    overflow: auto;
+}
+
+.base-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+
+    background-image: url('../img/truskawki.jpg');
+}
+
+.add-recipe {
+    background-image: url('../img/zloteTlo.png');
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 19px;
+    text-align: center;
+    letter-spacing: 0.7px;
+    width: 20%;
+    border: none;
+    color: black;
+    margin: 1em;
+    line-height: 2.5em;
+}
+
+.add-recipe:hover {
+    opacity: 90%;
+}
+
+.recipes>div>img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+.recipes>div>div {
+    height: 50%;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url('../img/zloteTlo.png');
+    border-radius: 0 0 1em 1em;
+}
+
+.recipes>div {
+    border: 1px solid gold;
+    border-radius: 1em 1em 1em 1em;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.recipe-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.recipe-form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea, input {
+    background-color: yellow;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+    border-radius: 26px;
+}
+
+.recipe-form > h1 {
+    color: gold;
+}
+
+#add{
+    background: none;
+    border: none;
+}
