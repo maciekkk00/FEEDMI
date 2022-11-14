@@ -1,8 +1,8 @@
 <?php
 
 require_once 'src/controllers/DefaultController.php'; //musimy zaimplementowac poniewaz chcemy utworzyc obiekt run w metodzie
-/*require_once 'src/controllers/SecurityController.php';
-require_once 'src/controllers/RecipeController.php';*/
+require_once 'src/controllers/SecurityController.php';
+require_once 'src/controllers/RecipeController.php';
 
 class Router {
 
@@ -12,9 +12,9 @@ class Router {
         self::$routes[$url] = $view;
     }
 
- /*   public static function post($url, $view) {
+    public static function post($url, $view) { //dane z formularza przekazujemy za pomoca metody post
         self::$routes[$url] = $view;
-    }*/
+    }
 
     public static function run ($url) { //ta metoda pozwoli nam uruchomic dany kontroler, ktory zostal przypisany pod okreslony url 
                                         //ta metoda pobiera z naszej tablicy routingu (public status $routes) kontroler przypisany do konkretnego urla a nastepnie z tego kontrolera wykona nasza akcje

@@ -8,8 +8,8 @@ $path = parse_url( $path, PHP_URL_PATH); //parsujemy
 //Router::get('index', 'DefaultController'); //wrzucamy sciezki do metody get, ktora zaimplementowalismy w pliku Routing.php
 //Router::get('register', 'DefaultController');
 Router::get('first', 'DefaultController');
-//Router::post('login', 'SecurityController');
-//Router::post('addRecipe', 'RecipeController');
+Router::post('login', 'SecurityController'); //tutaj wyznaczyliśmy, że pod url login ma zostac otwarty SecurityController z akcja login
+Router::post('addRecipe', 'RecipeController');
 Router::get('cook', 'DefaultController');
 //Router::get('recipes', 'RecipeController');
 Router::get('share', 'DefaultController');

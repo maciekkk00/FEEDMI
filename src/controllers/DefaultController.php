@@ -4,7 +4,7 @@ require_once 'AppController.php';
 
 class DefaultController extends AppController {
 
-   /*  private $messages = [];
+     private $messages = [];
 
    public function isLoged()
     {
@@ -34,14 +34,14 @@ class DefaultController extends AppController {
             $this->render('register', ['messages' => $this->messages]);
         else
             $this->first();
-    }*/
+    }
 
     public function first()
     {
-        //if ($this->isLoged())
+        if ($this->isLoged())
             $this->render('first');
-        //else
-          //  $this->login();
+        else
+            $this->login();
     }
 
     public function cook()

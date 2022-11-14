@@ -57,7 +57,7 @@
                 ?>
                 <input name="title" type="text" placeholder="title">
                 <textarea name="description" rows="5" placeholder="description"></textarea>
-                <input type="file" name="file">
+                <input type="file" name="file"> <!--zdj, nazwa file to klucz po którym będziemy się posługiwali względem zmiennej magicznej FILE aby dobrać się do tego pliku-->
                 <button class ="add-recipe" type="submit">send</button>
             </form>
         </section>

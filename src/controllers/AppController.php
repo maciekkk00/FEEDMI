@@ -1,21 +1,21 @@
 <?php
-
+//kontroler bazowy
 class AppController {
- /*   private $request;
+    private $request;
 
     public function __construct()
     {
-        $this->request = $_SERVER['REQUEST_METHOD'];
+        $this->request = $_SERVER['REQUEST_METHOD']; //z klucza REQUEST_METHOD, ze zmiennej SERVER bedziemy mogli pobrac wartosc czy jest to metoda GET czy POST
     }
 
-    protected function isGet() : bool
+    protected function isGet() : bool //zwaraca true albo false
     {
-        return $this->request === 'GET';
+        return $this->request === 'GET'; //zwracamy warunek czy nasza zmienna request jest równa wartości get
     }
 
     protected function isPost() : bool
     {
-        return $this->request === 'POST';
+        return $this->request === 'POST'; //zwracamy warunek czy nasza zmienna request jest równa wartości post
     }
 
     protected function getSession(): ?string
@@ -42,15 +42,15 @@ class AppController {
     {
         $userRepository = new UserRepository();
         return $userRepository->isValidSession($id_session);
-    }*/
+    }
 
     protected function render(string $template = null, array $variables = []) //w tej metodzie chcemy wyrenderowac, podajemy nazwe naszego templatu 
-    {
-        $templatePath = 'public/views/'. $template.'.html'; //doklejamy do nazwy naszego szablonu pelna sciezke . to kontynuacja stringu w php
+    { //zmienna array $variables = [], beda to zmienne, które bedziemy przekazywali na nasze widoki public/views
+        $templatePath = 'public/views/'. $template.'.php'; //doklejamy do nazwy naszego szablonu pelna sciezke . to kontynuacja stringu w php
         $output = 'File not found'; //jezeli nie znajdzie pliku to wypisz "asdas"
 
         if(file_exists($templatePath)){ //sprawdzamy czy taki plik isnieje 
-            extract($variables);
+            extract($variables); //wypakowywujemy zmienne
 
             ob_start();                                 //ta funkcja otwiera zapis bufora  
             include $templatePath;          //wczytujemy plik 
