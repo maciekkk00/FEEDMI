@@ -22,7 +22,7 @@
                     <a href="#" class="button">profile</a>
                 </li>
                 <li>
-                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-star"></i>
                     <a href="#" class="button">favorites</a>
                 </li>
                 <li>

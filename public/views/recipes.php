@@ -26,7 +26,7 @@
                 <a href="#" class="button">profile</a>
             </li>
             <li>
-                <i class="fas fa-heart"></i>
+                <i class="fas fa-star"></i>
                 <a href="#" class="button">favorites</a>
             </li>
             <li>
@@ -64,6 +64,7 @@
                         <div class="social-section">
                             <i class="fas fa-heart"> <?= $recipe->getLike(); ?></i>
                             <i class="fas fa-thumbs-down"> <?= $recipe->getDislike(); ?></i>
+                            <a href="/cook" class="button">SHOW</a>
                         </div>
                     </div>
                 </div>
