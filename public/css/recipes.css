@@ -89,3 +89,12 @@ textarea, input {
     background: none;
     border: none;
 }
+
+.fa-heart:before {
+    margin-left: -1em;
+
+}
+
+.fa-thumbs-down:before {
+    margin: 0em;
+}
