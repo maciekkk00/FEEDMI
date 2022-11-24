@@ -18,16 +18,16 @@
                     <a href="/first" class="button">home</a>
                 </li>
                 <li>
-                    <i class="fas fa-address-card"></i>
-                    <a href="#" class="button">profile</a>
-                </li>
-                <li>
-                    <i class="fas fa-star"></i>
-                    <a href="#" class="button">favorites</a>
-                </li>
-                <li>
                     <i class="fas fa-utensils"></i>
-                    <a href="/recipes" class="button">dishes</a>
+                    <a href="/cook" class="button">cook</a>
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <a href="/recipes" class="button">recipes</a>
+                </li>
+                <li>
+                    <i class="fas fa-blog"></i>
+                    <a href="/share" class="button">blog</a>
                 </li>
                 <li>
                     <i class="fas fa-cog"></i>

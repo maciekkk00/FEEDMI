@@ -3,6 +3,8 @@
     <link rel="stylesheet" type="text/css" href="/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="/public/css/share.css">
     <script src="https://kit.fontawesome.com/8df2c6e6d4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./public/js/input.js" defer></script>
     <title>SHARE</title>
 </head>
 
@@ -18,16 +20,16 @@
                     <a href="/first" class="button">home</a>
                 </li>
                 <li>
-                    <i class="fas fa-address-card"></i>
-                    <a href="#" class="button">profile</a>
-                </li>
-                <li>
-                    <i class="fas fa-star"></i>
-                    <a href="#" class="button">favorites</a>
-                </li>
-                <li>
                     <i class="fas fa-utensils"></i>
-                    <a href="/recipes" class="button">dishes</a>
+                    <a href="/cook" class="button">cook</a>
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <a href="/recipes" class="button">recipes</a>
+                </li>
+                <li>
+                    <i class="fas fa-blog"></i>
+                    <a href="/share" class="button">blog</a>
                 </li>
                 <li>
                     <i class="fas fa-cog"></i>
@@ -47,12 +49,15 @@
                 </div>
             </header>
             <section>
-                <a href="#" class="buttons">ADD A POST</a>
+<!--                <a href="#" class="buttons">ADD A POST</a>-->
+                <input class="buttons" type="button" id="btn1" value="ADD A POST">
                 <a href="#" class="buttons">MASTERSCHEFS</a>
                 <a href="#" class="buttons">FIND FRIENDS</a>
                 <div class="blog">
-                    <input placeholder="Write a post...">
-                    <a href="#" class="posts">I have been doing keto now for over a year. Well, I mean, I did have some breaks in between because 
+<!--                    <input placeholder="Write a post...">-->
+                    <input type="text" id="tbuser" placeholder="Write a post...">
+                    <p class="posts" id="output1"></p>
+                    <a href="#" class="posts">I have been doing keto now for over a year. Well, I mean, I did have some breaks in between because
                         I can never seem to resist carbs, but I always go back on the keto train and this keto cheesecake is what let me keep calm 
                         and keto on for so long. It has no crust, no water bath, no xanthan gum...</a>
                     <a href="#" class="posts">Hello! I’m back at it again with a recipe for Tiktok ramen.
@@ -73,6 +78,17 @@
                         It’s super cute and fun and you can make SO many flavor variations! They sell hot chocolate bombs/hot chocolate balls at the store, but around 
                         here I haven’t seen any so I decided to make my own. You can too!...</a>
                 </div>
+                <script>
+                    const txt1 = document.getElementById('tbuser');
+                    const btn1 = document.getElementById('btn1');
+                    const out1 = document.getElementById('output1');
+
+                    function fun1() {
+                        out1.innerHTML = txt1.value;
+                    }
+
+                    btn1.addEventListener('click',fun1);
+                </script>
             </section>
         </main>
     </div>
