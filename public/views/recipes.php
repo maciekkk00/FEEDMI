@@ -60,11 +60,11 @@
                 <div>
                     <div>
                         <h2><?= $recipe->getTitle() ?></h2>
-                        <p><?= $recipe->getDescription() ?></p>
+                        <p<><?= $recipe->getDescription() ?></p>
                         <div class="social-section">
                             <i class="fas fa-heart"> <?= $recipe->getLike(); ?></i>
                             <i class="fas fa-thumbs-down"> <?= $recipe->getDislike(); ?></i>
-                            <a href="/cook" class="button">SHOW</a>
+                            <a href="/cook" class="buttonSHOW">SHOW</a>
                         </div>
                     </div>
                 </div>

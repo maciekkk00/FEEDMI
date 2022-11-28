@@ -18,6 +18,7 @@ Router::get('like', 'RecipeController');
 Router::get('dislike', 'RecipeController');
 Router::get('admin', 'DefaultController');
 Router::get('settings', 'DefaultController');
+Router::get('przepis', 'DefaultController');
 
 Router::post('adduser', 'SecurityController');
 Router::post('logout', 'SecurityController');

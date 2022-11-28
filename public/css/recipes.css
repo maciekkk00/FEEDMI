@@ -91,10 +91,44 @@ textarea, input {
 }
 
 .fa-heart:before {
-    margin-left: -1em;
+    margin-left: -5em;
+    padding-right: -1.5em;
+    position: relative;
+    left: -0.5em;
 
 }
 
 .fa-thumbs-down:before {
-    margin: 0em;
+    margin: -1em;
+    padding-right: 0.5em;
+    position: relative;
+    left: -0.7em;
+
 }
+
+.fa-heart:after {
+    margin-left: -5em;
+    padding-right: 0.5em;
+}
+
+.fa-thumbs-down:after {
+    margin: 0em;
+    padding-right: 0.5em;
+}
+
+/*.opisDania {*/
+/*    background: yellow 0% 0% no-repeat padding-box;*/
+/*    box-shadow: inset 0px 3px 6px #00000029;*/
+/*    border-radius: 27px;*/
+/*    width: 80%;*/
+/*    height: 15%;*/
+/*    text-align: center;*/
+/*    color: black;*/
+/*    position: relative;*/
+/*    top: 30px;*/
+/*    left: 100px;*/
+/*    margin-bottom: 1em;*/
+/*    font-size: 18px;*/
+
+/*    overflow: auto; overflow-y: auto; overflow-x: hidden;*/
+/*}*/

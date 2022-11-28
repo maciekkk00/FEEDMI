@@ -3,8 +3,6 @@
     <link rel="stylesheet" type="text/css" href="/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="/public/css/share.css">
     <script src="https://kit.fontawesome.com/8df2c6e6d4.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./public/js/input.js" defer></script>
     <title>SHARE</title>
 </head>
 
@@ -50,7 +48,7 @@
             </header>
             <section>
 <!--                <a href="#" class="buttons">ADD A POST</a>-->
-                <input class="buttons" type="button" id="btn1" value="ADD A POST">
+                <input class="buttonsADD" type="button" id="btn1" value="ADD A POST">
                 <a href="#" class="buttons">MASTERSCHEFS</a>
                 <a href="#" class="buttons">FIND FRIENDS</a>
                 <div class="blog">

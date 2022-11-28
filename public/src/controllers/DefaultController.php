@@ -76,5 +76,13 @@ class DefaultController extends AppController {
             $this->login();
     }
 
+    public function przepis()
+    {
+        if ($this->isLoged())
+            $this->render('przepis');
+        else
+            $this->login();
+    }
+
 
 }
