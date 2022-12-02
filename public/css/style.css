@@ -226,6 +226,8 @@ li i {
     margin-top: 1em;
     position: relative;
     left: 3em;
+
+
 }
 .button {
     background: transparent radial-gradient(closest-side at 50% 50%, #F1F1F1D8 0%, #ECBE05 100%) 0% 0% no-repeat padding-box;
@@ -272,6 +274,7 @@ li:last-child {
 
 .fa, .fas {
     width: 1em;
+    margin: 5px;
 }
 
 

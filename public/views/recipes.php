@@ -59,13 +59,24 @@
                 <img src="/public/uploads/<?= $recipe->getImage() ?>">
                 <div>
                     <div>
-                        <h2><?= $recipe->getTitle() ?></h2>
-                        <p<><?= $recipe->getDescription() ?></p>
+                        <h2 class="tytul"><?= $recipe->getTitle() ?></h2>
+                        <p class="opis"><?= $recipe->getDescription() ?>
+<!--                            <span id = "dots">.......</span>-->
+<!--                            <div id="more">-->
+                                <p class="skl">SKLADNIKI:</p>
+                                <p><?= $recipe->getSkladnik1() ?></p>
+                                <p><?= $recipe->getSkladnik2() ?></p>
+                                <p><?= $recipe->getSkladnik3() ?></p>
+                                <p><?= $recipe->getSkladnik4() ?></p>
+                                <p><?= $recipe->getSkladnik5() ?></p>
+<!--                            </div>-->
+                        </p>
                         <div class="social-section">
                             <i class="fas fa-heart"> <?= $recipe->getLike(); ?></i>
                             <i class="fas fa-thumbs-down"> <?= $recipe->getDislike(); ?></i>
-                            <a href="/cook" class="buttonSHOW">SHOW</a>
+<!--                            <a href="/cook" class="buttonSHOW">SHOW</a>-->
                         </div>
+<!--                        <button onclick="readmore()" id = "btn">Read more</button>-->
                     </div>
                 </div>
             </div>
@@ -73,6 +84,23 @@
         </section>
     </main>
 </div>
+<!--<script>-->
+<!--    function readmore(){-->
+<!--        var dots = document.getElementById("dots");-->
+<!--        var moretext = document.getElementById('more');-->
+<!--        var btn = document.getElementById('btn')-->
+<!---->
+<!--        if(dots.style.display === "none"){-->
+<!--            dots.style.display = "inline";-->
+<!--            btn.innerHTML = "Read more";-->
+<!--            moretext.style.display = 'none';-->
+<!--        }else{-->
+<!--            dots.style.display = 'none';-->
+<!--            btn.innerHTML = "Read less";-->
+<!--            moretext.style.display = 'inline';-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
 </body>
 
 <template id="recipe-template">

@@ -47,15 +47,27 @@
                 </div>
             </header>
             <section>
-                    <a class="buttons">ADD YOUR PRODUCTS</a>
-                    <a class="buttons">ALLERGIC TO</a>
-                    <a class="buttons">TYPE OF MEAL</a>
-                    <a class="buttons">CALORIES</a>
-                    <a href="#" class="buttons b1">+</a>
-                    <a href="#" class="buttons b1">+</a>
-                    <a href="#" class="buttons b1">+</a>
-                    <a href="#" class="buttons b1">+</a>
-                    <a href="#" class="buttons button1">FIND A RECIPE</a>
+                    <p class="int1">Skladnik 1</p>
+                    <p class="int">Skladnik 2</p>
+                    <p class="int">Skladnik 3</p>
+                    <p class="int">Skladnik 4</p>
+                    <p class="int">Skladnik 5</p>
+                    <input class="sklad1" type="text">
+                    <input class="sklad" type="text">
+                    <input class="sklad" type="text">
+                    <input class="sklad" type="text">
+                    <input class="sklad" type="text">
+<!--                    <a class="buttons">Skladnik 1</a>-->
+<!--                    <a class="buttons">Skladnik 2</a>-->
+<!--                    <a class="buttons">Skladnik 3</a>-->
+<!--                    <a class="buttons">Skladnik 4</a>-->
+<!--                    <a class="buttons">Skladnik 5</a>-->
+<!--                    <a href="#" class="buttons b1">+</a>-->
+<!--                    <a href="#" class="buttons b1">+</a>-->
+<!--                    <a href="#" class="buttons b1">+</a>-->
+<!--                    <a href="#" class="buttons b1">+</a>-->
+<!--                    <a href="#" class="buttons b1">+</a>-->
+                    <a href="#" class="bt">FIND A RECIPE</a>
             </section>
         </main>
     </div>

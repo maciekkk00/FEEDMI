@@ -31,8 +31,8 @@ class RecipeRepository extends Repository
     {
         $date = new DateTime();
         $stmt = $this->database->connect()->prepare('
-            INSERT INTO recipes (title, description, image, created_at, id_assigned_by)
-            VALUES (?, ?, ?, ?, getIDbyEmail(?))
+            INSERT INTO recipes (title, description, skladnik1, skladnik2, skladnik3, skladnik4, skladnik5, image, created_at, id_assigned_by)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, getIDbyEmail(?))
         ');
 
         //TODO you should get this value from logged user session
@@ -42,6 +42,11 @@ class RecipeRepository extends Repository
         $stmt->execute([
             $recipe->getTitle(),
             $recipe->getDescription(),
+            $recipe->getSkladnik1(),
+            $recipe->getSkladnik2(),
+            $recipe->getSkladnik3(),
+            $recipe->getSkladnik4(),
+            $recipe->getSkladnik5(),
             $recipe->getImage(),
             $date->format('Y-m-d'),
             $assignedByEmail
@@ -62,6 +67,11 @@ class RecipeRepository extends Repository
             $result[] = new Recipe(
                 $recipe['title'],
                 $recipe['description'],
+                $recipe['skladnik1'],
+                $recipe['skladnik2'],
+                $recipe['skladnik3'],
+                $recipe['skladnik4'],
+                $recipe['skladnik5'],
                 $recipe['image'],
                 $recipe['like'],
                 $recipe['dislike'],

@@ -1,8 +1,9 @@
 section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 2em;
     padding: 2em;
+    text-align: center;
     
 }
 
@@ -109,6 +110,131 @@ section {
     .buttonLogin:hover {
         background: #ECBE05;
     }
+}*/
+.int {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 354px;
+    left: 5px;
+    width: 13em;
+    height: 52px;
+    background-image: url(/public/img/zloteTlo.png);
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 24px;
+    opacity: 1;
+    position: relative;
+    top: 180px;
+    font: normal normal bold 20px/25px Miriam CLM;
+    letter-spacing: 0px;
+    color: black;
+    text-shadow: 0px 3px 6px #00000029;
+    text-transform: uppercase;
+    opacity: 1;
+    filter: blur(0px);
+    font-size: 1,5em;
+}
+
+.sklad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 354px;
+    left: -15px;
+    width: 11em;
+    height: 3px;
+    border: 1px solid #707070;
+    border-radius: 24px;
+    opacity: 1;
+    position: relative;
+    top: 133px;
+    font: normal normal bold 20px/25px Miriam CLM;
+    letter-spacing: 0px;
+    color: black;
+    text-shadow: 0px 3px 6px #00000029;
+    text-transform: uppercase;
+    opacity: 1;
+    filter: blur(0px);
+    font-size: 1,5em;
+}
+
+.int1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 354px;
+    left: 40px;
+    width: 13em;
+    height: 52px;
+    background-image: url(/public/img/zloteTlo.png);
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 24px;
+    opacity: 1;
+    position: relative;
+    top: 180px;
+    font: normal normal bold 20px/25px Miriam CLM;
+    letter-spacing: 0px;
+    color: black;
+    text-shadow: 0px 3px 6px #00000029;
+    text-transform: uppercase;
+    opacity: 1;
+    filter: blur(0px);
+    font-size: 1,5em;
+}
+
+.sklad1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 354px;
+    left: 20px;
+    width: 11em;
+    height: 3px;
+    border: 1px solid #707070;
+    border-radius: 24px;
+    opacity: 1;
+    position: relative;
+    top: 133px;
+    font: normal normal bold 20px/25px Miriam CLM;
+    letter-spacing: 0px;
+    color: black;
+    text-shadow: 0px 3px 6px #00000029;
+    text-transform: uppercase;
+    opacity: 1;
+    filter: blur(0px);
+    font-size: 1,5em;
+}
+
+.bt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    left: 675px;
+    width: 335px;
+    height: 52px;
+    background-image: url('/public/img/zloteTlo.png');
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 24px;
+    opacity: 1;
+
+    position: relative; top: 150px;
+
+    font: normal normal bold 20px/25px Miriam CLM;
+    letter-spacing: 0px;
+    color: black;
+    text-shadow: 0px 3px 6px #00000029;
+    text-transform: uppercase;
+    filter: blur(0px);
+    font-size: 1,5em;
 }
 
 

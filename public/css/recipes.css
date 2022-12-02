@@ -1,6 +1,6 @@
 section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em;
     padding: 2em;
     overflow: auto;
@@ -16,8 +16,8 @@ section {
 }
 
 .add-recipe {
-    background-image: url('/public/img/zloteTlo.png');
-    box-shadow: 0px 3px 6px #00000029;
+    background: transparent radial-gradient(closest-side at 50% 50%, #F1F1F1D8 0%, #ECBE05 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 6px 6px #00000029;
     border-radius: 19px;
     text-align: center;
     letter-spacing: 0.7px;
@@ -33,27 +33,28 @@ section {
 }
 
 .recipes>div>img {
-    height: 50%;
+    height: 40%;
     width: 100%;
     object-fit: cover;
     border-radius: 1em 1em 0 0;
 }
 
 .recipes>div>div {
-    height: 50%;
+    height: 60%;
     color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url(/public/img/zloteTlo.png);
+    background-image: url(/public/img/images.png);
     border-radius: 0 0 1em 1em;
+    word-break: break-word
 }
 
 .recipes>div {
     border: 1px solid gold;
     border-radius: 1em 1em 1em 1em;
-    height: 400px;
+    height: 1250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,45 +91,73 @@ textarea, input {
     border: none;
 }
 
-.fa-heart:before {
-    margin-left: -5em;
-    padding-right: -1.5em;
-    position: relative;
-    left: -0.5em;
+/*.fa-heart:before {*/
+/*    !*margin-left: -5em;*!*/
+/*    !*padding-right: -1.5em;*!*/
+/*    !*position: relative;*!*/
+/*    !*left: -0.5em;*!*/
+/*    padding: 3px;*/
 
-}
-
-.fa-thumbs-down:before {
-    margin: -1em;
-    padding-right: 0.5em;
-    position: relative;
-    left: -0.7em;
-
-}
-
-.fa-heart:after {
-    margin-left: -5em;
-    padding-right: 0.5em;
-}
-
-.fa-thumbs-down:after {
-    margin: 0em;
-    padding-right: 0.5em;
-}
-
-/*.opisDania {*/
-/*    background: yellow 0% 0% no-repeat padding-box;*/
-/*    box-shadow: inset 0px 3px 6px #00000029;*/
-/*    border-radius: 27px;*/
-/*    width: 80%;*/
-/*    height: 15%;*/
-/*    text-align: center;*/
-/*    color: black;*/
-/*    position: relative;*/
-/*    top: 30px;*/
-/*    left: 100px;*/
-/*    margin-bottom: 1em;*/
-/*    font-size: 18px;*/
-
-/*    overflow: auto; overflow-y: auto; overflow-x: hidden;*/
 /*}*/
+
+/*.fa-thumbs-down:before {*/
+/*    !*margin: -1em;*!*/
+/*    !*padding-right: 0.5em;*!*/
+/*    !*position: relative;*!*/
+/*    !*left: -0.7em;*!*/
+/*    padding: 3px;*/
+
+/*}*/
+
+/*.fa-heart:after {*/
+/*    !*margin-left: -5em;*!*/
+/*    !*padding-right: 0.5em;*!*/
+/*    padding: 3px;*/
+/*}*/
+
+/*.fa-thumbs-down:after {*/
+/*    !*margin: 0em;*!*/
+/*    !*padding-right: 0.5em;*!*/
+/*    padding: 3px;*/
+/*}*/
+
+
+#more {
+    display: none;
+}
+.social-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    background: transparent radial-gradient(closest-side at 50% 50%, #F1F1F1D8 0%, #ECBE05 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 24px;
+    margin-left: 1em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: black;
+    padding: 0.2em;
+    width: 25%;
+    height: 40px;
+    margin-top: 1em;
+}
+
+.opis {
+    margin: 2em;
+}
+
+.skl {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

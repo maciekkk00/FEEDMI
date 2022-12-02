@@ -4,13 +4,13 @@ require_once 'AppController.php';
 require_once __DIR__ .'/../models/Recipe.php';
 require_once __DIR__.'/../repository/RecipeRepository.php';
 
-class RecipeController extends AppController {
+class RecipeController extends AppController { //cala logika naszego uploadu
 
     const MAX_FILE_SIZE = 1024*1024;
     const SUPPORTED_TYPES = ['image/png', 'image/jpeg'];
     const UPLOAD_DIRECTORY = '/../uploads/';
 
-    private $messages = [];
+    private $messages = []; //do tej zmiennej bedziemy dodawali nasze zmienne, nasze komunikaty dotyczace walidacji
     private $recipeRepository;
 
     public function __construct()
@@ -32,14 +32,14 @@ class RecipeController extends AppController {
 
     public function addRecipe()
     {
-        if($this->isPost() && is_uploaded_file($_FILES['file']['tmp_name']) && $this->validate($_FILES['file'])) {
+        if($this->isPost() && is_uploaded_file($_FILES['file']['tmp_name']) && $this->validate($_FILES['file'])) { //sprawdzamy czy zostala wykonana metoda post
 
             move_uploaded_file(
                 $_FILES['file']['tmp_name'],
                 dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']
             );
 
-            $recipe = new Recipe($_POST['title'], $_POST['description'], $_FILES['file']['name']);
+            $recipe = new Recipe($_POST['title'], $_POST['description'], $_POST['skladnik1'], $_POST['skladnik2'], $_POST['skladnik3'], $_POST['skladnik4'], $_POST['skladnik5'], $_FILES['file']['name']);
             $this->recipeRepository->addRecipe($recipe);
 
             return $this->render('recipes', [

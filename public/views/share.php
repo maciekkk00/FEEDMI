@@ -54,7 +54,6 @@
                 <div class="blog">
 <!--                    <input placeholder="Write a post...">-->
                     <input type="text" id="tbuser" placeholder="Write a post...">
-                    <p class="posts" id="output1"></p>
                     <a href="#" class="posts">I have been doing keto now for over a year. Well, I mean, I did have some breaks in between because
                         I can never seem to resist carbs, but I always go back on the keto train and this keto cheesecake is what let me keep calm 
                         and keto on for so long. It has no crust, no water bath, no xanthan gum...</a>
@@ -75,6 +74,7 @@
                         the chocolate melts and magically releases the marshmallows and cocoa hiding inside.
                         It’s super cute and fun and you can make SO many flavor variations! They sell hot chocolate bombs/hot chocolate balls at the store, but around 
                         here I haven’t seen any so I decided to make my own. You can too!...</a>
+                    <p class="posts" id="output1"></p>
                 </div>
                 <script>
                     const txt1 = document.getElementById('tbuser');

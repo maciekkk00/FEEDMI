@@ -48,15 +48,20 @@
         </header>
         <section class="recipe-form">
             <h1>UPLOAD</h1>
-            <form action="addRecipe" method="POST" ENCTYPE="multipart/form-data">
+            <form action="addRecipe" method="POST" ENCTYPE="multipart/form-data">  <!--akcja, ktora musimy utworzyc odpowiedni wpis w routingu (plik index.php)-->
                 <?php if(isset($messages)) {
                     foreach ($messages as $message) {
-                        echo $message;
+                        echo $message;                      //wiadomosci przekazane z kontrolera
                     }
                 }
                 ?>
                 <input name="title" type="text" placeholder="title">
                 <textarea name="description" rows="5" placeholder="description"></textarea>
+                <textarea name="skladnik1" rows="1" placeholder="skladnik1"></textarea>
+                <textarea name="skladnik2" rows="1" placeholder="skladnik2"></textarea>
+                <textarea name="skladnik3" rows="1" placeholder="skladnik3"></textarea>
+                <textarea name="skladnik4" rows="1" placeholder="skladnik4"></textarea>
+                <textarea name="skladnik5" rows="1" placeholder="skladnik5"></textarea>
                 <input type="file" name="file">
                 <button class ="add-recipe" type="submit">send</button>
             </form>
