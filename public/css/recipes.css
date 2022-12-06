@@ -148,10 +148,16 @@ textarea, input {
 
 .opis {
     margin: 2em;
+    height: 300px;
+    overflow: auto;
 }
 
 .skl {
     font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 

@@ -122,6 +122,10 @@ section {
     background: #ECBE05;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /*@media only screen and (max-device-width: 420px) {
     .container {
         flex-direction: column;
