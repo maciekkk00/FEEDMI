@@ -64,11 +64,18 @@
 <!--                            <span id = "dots">.......</span>-->
 <!--                            <div id="more">-->
                                 <p class="skl">SKLADNIKI:</p>
-                                <p><?= $recipe->getSkladnik1() ?></p>
-                                <p><?= $recipe->getSkladnik2() ?></p>
-                                <p><?= $recipe->getSkladnik3() ?></p>
-                                <p><?= $recipe->getSkladnik4() ?></p>
-                                <p><?= $recipe->getSkladnik5() ?></p>
+                                <div class = "lista">
+                                    <p><?= $recipe->getSkladnik1() ?></p>
+                                    <p><?= $recipe->getSkladnik2() ?></p>
+                                    <p><?= $recipe->getSkladnik3() ?></p>
+                                    <p><?= $recipe->getSkladnik4() ?></p>
+                                    <p><?= $recipe->getSkladnik5() ?></p>
+                                    <p><?= $recipe->getSkladnik6() ?></p>
+                                    <p><?= $recipe->getSkladnik7() ?></p>
+                                    <p><?= $recipe->getSkladnik8() ?></p>
+                                    <p><?= $recipe->getSkladnik9() ?></p>
+                                    <p><?= $recipe->getSkladnik10() ?></p>
+                                </div>
 <!--                            </div>-->
                         </p>
                         <div class="social-section">

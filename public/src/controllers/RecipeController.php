@@ -39,7 +39,7 @@ class RecipeController extends AppController { //cala logika naszego uploadu
                 dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']
             );
 
-            $recipe = new Recipe($_POST['title'], $_POST['description'], $_POST['skladnik1'], $_POST['skladnik2'], $_POST['skladnik3'], $_POST['skladnik4'], $_POST['skladnik5'], $_FILES['file']['name']);
+            $recipe = new Recipe($_POST['title'], $_POST['description'], $_POST['skladnik1'], $_POST['skladnik2'], $_POST['skladnik3'], $_POST['skladnik4'], $_POST['skladnik5'], $_POST['skladnik6'], $_POST['skladnik7'], $_POST['skladnik8'], $_POST['skladnik9'], $_POST['skladnik10'], $_FILES['file']['name']);
             $this->recipeRepository->addRecipe($recipe);
 
             return $this->render('recipes', [

@@ -39,7 +39,7 @@
         <header>
             <div class="search-bar">
                 <form>
-                    <input placeholder="search">
+                    <input class="pasek" placeholder="search">
                 </form>
             </div>
             <div class="username">
@@ -62,6 +62,11 @@
                 <textarea name="skladnik3" rows="1" placeholder="skladnik3"></textarea>
                 <textarea name="skladnik4" rows="1" placeholder="skladnik4"></textarea>
                 <textarea name="skladnik5" rows="1" placeholder="skladnik5"></textarea>
+                <textarea name="skladnik6" rows="1" placeholder="skladnik6"></textarea>
+                <textarea name="skladnik7" rows="1" placeholder="skladnik7"></textarea>
+                <textarea name="skladnik8" rows="1" placeholder="skladnik8"></textarea>
+                <textarea name="skladnik9" rows="1" placeholder="skladnik9"></textarea>
+                <textarea name="skladnik10" rows="1" placeholder="skladnik10"></textarea>
                 <input type="file" name="file">
                 <button class ="add-recipe" type="submit">send</button>
             </form>

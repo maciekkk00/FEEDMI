@@ -160,8 +160,15 @@ textarea, input {
     display: none;
 }
 
+.lista {
+    margin: 2em;
+    height: 150px;
+    overflow: auto;
+}
 
-
+.pasek {
+    background-color: #FFFFFF;
+}
 
 
 

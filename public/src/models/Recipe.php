@@ -9,6 +9,11 @@ class Recipe
     private $skladnik3;
     private $skladnik4;
     private $skladnik5;
+    private $skladnik6;
+    private $skladnik7;
+    private $skladnik8;
+    private $skladnik9;
+    private $skladnik10;
     private $image;
     private $like;
     private $dislike;
@@ -16,7 +21,7 @@ class Recipe
 
 
 
-    public function __construct($title, $description, $skladnik1, $skladnik2, $skladnik3, $skladnik4, $skladnik5, $image, $like = 0, $dislike = 0, $id = null)
+    public function __construct($title, $description, $skladnik1, $skladnik2, $skladnik3, $skladnik4, $skladnik5, $skladnik6, $skladnik7, $skladnik8, $skladnik9, $skladnik10, $image, $like = 0, $dislike = 0, $id = null)
     {
         $this->title = $title;
         $this->description = $description;
@@ -25,6 +30,11 @@ class Recipe
         $this->skladnik3 = $skladnik3;
         $this->skladnik4 = $skladnik4;
         $this->skladnik5 = $skladnik5;
+        $this->skladnik6 = $skladnik6;
+        $this->skladnik7 = $skladnik7;
+        $this->skladnik8 = $skladnik8;
+        $this->skladnik9 = $skladnik9;
+        $this->skladnik10 = $skladnik10;
         $this->image = $image;
         $this->like = $like;
         $this->dislike = $dislike;
@@ -141,6 +151,56 @@ class Recipe
     public function setSkladnik5(string $skladnik5)
     {
         $this->skladnik5 = $skladnik5;
+    }
+
+    public function getSkladnik6(): string
+    {
+        return $this->skladnik6;
+    }
+
+    public function setSkladnik6(string $skladnik6)
+    {
+        $this->skladnik6 = $skladnik6;
+    }
+
+    public function getSkladnik7(): string
+    {
+        return $this->skladnik7;
+    }
+
+    public function setSkladnik7(string $skladnik7)
+    {
+        $this->skladnik7 = $skladnik7;
+    }
+
+    public function getSkladnik8(): string
+    {
+        return $this->skladnik8;
+    }
+
+    public function setSkladnik8(string $skladnik8)
+    {
+        $this->skladnik8 = $skladnik8;
+    }
+
+    public function getSkladnik9(): string
+    {
+        return $this->skladnik9;
+    }
+
+    public function setSkladnik9(string $skladnik9)
+    {
+        $this->skladnik9 = $skladnik9;
+    }
+
+    public function getSkladnik10(): string
+    {
+        return $this->skladnik10;
+    }
+
+    public function setSkladnik10(string $skladnik10)
+    {
+        $this->skladnik10 = $skladnik10;
     }
 
 }
