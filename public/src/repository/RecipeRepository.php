@@ -96,12 +96,17 @@ class RecipeRepository extends Repository
         $searchString = '%' . strtolower($searchString) . '%';
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM recipes WHERE LOWER(title) LIKE :search OR LOWER(description) LIKE :search
-        ');
+            SELECT * FROM recipes WHERE LOWER(title) LIKE :search  
+        '); //tworzymy zmienna $stmt, nastepnie odwolujemy sie do naszej bazy danych, w ktorej dokonujemy polaczenia,a nastepnie na tym polaczaniu tworzymy sobie zapytanie
+        //zapytanie to SELECT, który bedzie wybieral wszystkie kolumny z tabelki recipes, gdzie i tutaj zamieniamy kolumne title na male litery i równamy do :search
         $stmt->bindParam(':search', $searchString, PDO::PARAM_STR);
+        //wyzej za ten klucz :search z zapytania sql wstawiamy ten argument przekazany do funkcji w repozytorium w metodzie getRecipeByTitle
+        //robimy to za pomoca funkcji bindParam
         $stmt->execute();
+        //wykonujemy to zapytanie
 
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        //zwracamy sobie tablice asocjacyjne, które i tak zostaną skonwertowane przez nas w pozniejszym etapie na obiekt JSON
     }
 
     public function like(int $id) {

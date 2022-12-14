@@ -56,17 +56,17 @@ class RecipeController extends AppController { //cala logika naszego uploadu
     }
 
     public function search()
-    {
-        $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
+    {//chcemy pobrac contentType, ktory zostal wyslany w protokole HTTP w naglowku w funkcji fetch w dodatkowych parametrach i on mial wartos: application/json (plik search.js)
+        $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : ''; //tworzymy nowa zmienna, ktora mozemy sobie pobrac za pomoca zmiennej SERVER, ktora bedzie dostepna pod kluczem CONTENT_TYPE, ale musimy to zabezpieczyc odpowiednio dlatego na samym poczatku sprawdzamy czy ta zmienna serwerowa zostala ustawiona za pomoca opcji isset, nastepnie jezeli ta zmienna zostala ustawiona to wowczas bedziemy chcieli ją zwrocic , natomiast jezeli nie zostala ustawiona to chcemy przypisac jej wartosc pusta a w funkcji trim przycinamy odpowiednio ta wartosc, ktora otrzymamy z zmiennej CONTENT_TYPE
 
-        if ($contentType === "application/json") {
-            $content = trim(file_get_contents("php://input"));
-            $decoded = json_decode($content, true);
+        if ($contentType === "application/json") { //w bloku if sprawdzamy czy contentType zostal faktycznie ustawiony na wartosc application.json czyli wartosc naglowka z funkcji fetch
+            $content = trim(file_get_contents("php://input")); //nastepnie musimy w jakis sposob pobrac content, ktory wysylalismy w bodym w protokole HTTP i mozemy to pobrac rownierz tworzac sobie zmienna $content ale tym razem mozemy to zrobic za pomoca funkcji file_get_contents(tutaj podajemy skad chcemy to pobrac, a chcemy to pobrac z "php://input" - to jest wartosc taka stala), a calosc opakowywujemy sobie w funkcje trim. //w taki sposob pobierzemt wartosc body
+            $decoded = json_decode($content, true); //ale musimy bo wartosc body zostala wyslana w formie javaScript Object Notation w formacie JSON wiec musimy sobie taka wartosc zdecodowac. //tworzymy zmienna $decoded i za pomoca funkcji json_decode(wrzucamy sobie do srodka $content i jako drugi parametr dajemy true co oznacza ze chcemy to wrzucic do listy asocjacyjnej)
 
-            header('Content-type: application/json');
-            http_response_code(200);
-
-            echo json_encode($this->recipeRepository->getRecipeByTitle($decoded['search']));
+            header('Content-type: application/json'); //musimy ustawic wczesniej naglowki, czyli ustawiamy naglowek Content-type: application/json
+            http_response_code(200); //ustawiamy kod odpowiedzi na 200 czyli ze wszystko przebieglo pomyslnie
+            //i po takim ustawieniu zwrocimy sobie wszystkie przepisy, ktore wyszukalismy za pomoca tego zapytania w getRecipeByTitle w bazie danych
+            echo json_encode($this->recipeRepository->getRecipeByTitle($decoded['search'])); //zwracamy nasza wartosc czyli wszystkie te przepisy, ktore zwroci nam zapytanie search w recipeRepository // my skorzystamy sobie z tego repozytorium w naszym kontrolerze, wywolujemy sobie metode getProjectByTitle(to slowko wpisywane do searchbaru mozemy sobie pobrac z tablicy asocjacyjnej odwolujac sie po luczu search), czyli po prostu zamienilismy tutaj obiekt javaScriptowy na tablice asocjacyjna php i w taki sposob przekazujemy ta wartosc, my chcemy zwracac jsona, dlatego wszystko opakowywujemy w funkcje json_encode
         }
     }
 

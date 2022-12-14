@@ -115,8 +115,22 @@
         <img src="">
         <div>
             <div>
-                <h2>title</h2>
-                <p>description</p>
+                <h2 class="tytul">title</h2>
+                <p class="opis">description
+                    <p class="skl">SKLADNIKI:</p>
+                    <div class = "lista">
+                        <p id = "s1">sklad1</p>
+                        <p id = "s2">sklad2</p>
+                        <p id = "s3">sklad3</p>
+                        <p id = "s4">sklad4</p>
+                        <p id = "s5">sklad5</p>
+                        <p id = "s6">sklad6</p>
+                        <p id = "s7">sklad7</p>
+                        <p id = "s8">sklad8</p>
+                        <p id = "s9">sklad9</p>
+                        <p id = "s10">sklad10</p>
+                    </div>
+                </p>
                 <div class="social-section">
                     <i class="fas fa-heart"> 0</i>
                     <i class="fas fa-thumbs-down"> 0</i>
