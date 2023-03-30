@@ -1,24 +1,6 @@
 # FEEDMI
-In this application you can find interesting recipes, add your ideas and run your own blog.
+Web application to support meal preparation.
 
-# Technologies used:
-
-HTML
-
-CSS
-
-PHP
-
-SQL
-
-JavaScript
-
-Docker
-
-The initial prototype of the app is saved as 'feedmi_prototipe.pdf'.
-
+# Everything you need to know about this app:
 https://github.com/maciekkk00/FEEDMI/blob/main/FEEDMI.pdf
 
-# ERD of the database:
-
-![ERD schema](ERD.svg)
