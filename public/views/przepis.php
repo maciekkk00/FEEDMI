@@ -26,7 +26,7 @@
             </li>
             <li>
                 <i class="fas fa-blog"></i>
-                <a href="/share" class="button">blog</a>
+                <a href="/blogs" class="button">blog</a>
             </li>
             <li>
                 <i class="fas fa-cog"></i>
@@ -42,7 +42,7 @@
                 </form>
             </div>
             <div class="username">
-                username <i class="fas fa-smile"></i>
+                <p class="napis">ENJOY YOUR MEAL <i class="fas fa-smile"></i></p>
             </div>
         </header>
         <section>

@@ -52,13 +52,13 @@ class DefaultController extends AppController {
             $this->login();
     }
 
-    public function share()
-    {
-        if ($this->isLoged())
-            $this->render('share');
-        else
-            $this->login();
-    }
+//    public function share()
+//    {
+//        if ($this->isLoged())
+//            $this->render('share');
+//        else
+//            $this->login();
+//    }
 
     public function admin()
     {

@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/723297a893.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8df2c6e6d4.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./public/js/search.js" defer></script>
+    <script type="text/javascript" src="./public/js/search1.js" defer></script>
     <script type="text/javascript" src="./public/js/statistics.js" defer></script>
     <title>RECIPES</title>
 </head>
@@ -22,17 +23,35 @@
                 <a href="/first" class="button">home</a>
             </li>
             <li>
-                <i class="fas fa-utensils"></i>
-                <a href="/cook" class="button">cook</a>
+                <div>
+                    <i class="fas fa-plus"></i>
+                    <form class="butonik" action="addRecipe" method="post">
+                        <button id="add">
+                            add recipe
+                        </button>
+                    </form>
+                </div>
             </li>
             <li>
                 <i class="fas fa-book"></i>
-                <a href="/recipes" class="button">recipes</a>
+                <a href="/recipes" class="button20">
+                    <p class="recc">
+                        recipes
+                    </p>
+                </a>
             </li>
             <li>
                 <i class="fas fa-blog"></i>
-                <a href="/share" class="button">blog</a>
+                <a href="/blogs" class="button21">
+                    <p class="blogg">
+                        blog
+                    </p>
+                </a>
             </li>
+<!--            <li>-->
+<!--                <i class="fas fa-utensils"></i>-->
+<!--                <a href="/cook" class="button">cook</a>-->
+<!--            </li>-->
             <li>
                 <i class="fas fa-cog"></i>
                 <a href="/settings" class="button">settings</a>
@@ -42,17 +61,20 @@
     <main>
         <header>
             <div class="search-bar">
-                    <input placeholder="search recipe">
+                    <input placeholder="search recipe by title">
             </div>
-            <div class="add-recipe">
-                <form class="add-button" action="addRecipe" method="post">
-                    <button id="add">
-                        <i class="fas fa-plus"></i>
-                        Add recipe
-                    </button>
-                </form>
+            <div class="username">
+                <p class="napis">ENJOY YOUR MEAL <i class="fas fa-smile"></i></p>
             </div>
         </header>
+<!--        <div class="podajj2">-->
+<!--            PODAJ SKLADNIKI-->
+<!--        </div>-->
+        <section class = "podaj_skladniki">
+            <div class="search-bar2">
+                <input placeholder="enter the ingredients you have">
+            </div>
+        </section>
         <section class="recipes">
             <?php foreach($recipes as $recipe): ?>
             <div id="<?= $recipe->getId(); ?>">

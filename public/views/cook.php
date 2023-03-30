@@ -27,7 +27,7 @@
                 </li>
                 <li>
                     <i class="fas fa-blog"></i>
-                    <a href="/share" class="button">blog</a>
+                    <a href="/blogs" class="button">blog</a>
                 </li>
                 <li>
                     <i class="fas fa-cog"></i>
@@ -43,7 +43,7 @@
                     </form>
                 </div>
                 <div class="username">
-                     username <i class="fas fa-smile"></i>
+                    <p class="napis">ENJOY YOUR MEAL <i class="fas fa-smile"></i></p>
                 </div>
             </header>
             <section>
@@ -52,11 +52,11 @@
                     <p class="int">Skladnik 3</p>
                     <p class="int">Skladnik 4</p>
                     <p class="int">Skladnik 5</p>
-                    <input class="sklad1" type="text">
-                    <input class="sklad" type="text">
-                    <input class="sklad" type="text">
-                    <input class="sklad" type="text">
-                    <input class="sklad" type="text">
+                    <input class="sklad1" placeholder="first">
+                    <input class="sklad">
+                    <input class="sklad">
+                    <input class="sklad">
+                    <input class="sklad">
 <!--                    <a class="buttons">Skladnik 1</a>-->
 <!--                    <a class="buttons">Skladnik 2</a>-->
 <!--                    <a class="buttons">Skladnik 3</a>-->

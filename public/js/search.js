@@ -1,4 +1,4 @@
-const search = document.querySelector('input[placeholder="search recipe"]'); //w pierwszej kolejnosci jest to nasz input z placeholderem "search recipe"
+const search = document.querySelector('input[placeholder="search recipe by title"]'); //w pierwszej kolejnosci jest to nasz input z placeholderem "search recipe"
 const recipeContainer = document.querySelector(".recipes"); //do tej stalej przypisujemy nasze wszystkie przepisy, ktore znajduja sie w sekcji o klasie recipes
 //na poczatku tworzymy dwie stale do ktorych chcemy przypisac elementy html, ktore znajduja sie w pliku widoku recipes.php
 

@@ -18,17 +18,35 @@
                     <a href="/first" class="button">home</a>
                 </li>
                 <li>
-                    <i class="fas fa-utensils"></i>
-                    <a href="/cook" class="button">cook</a>
+                    <div>
+                        <i class="fas fa-plus"></i>
+                        <form class="butonik" action="addRecipe" method="post">
+                            <button id="add">
+                                add recipe
+                            </button>
+                        </form>
+                    </div>
                 </li>
                 <li>
                     <i class="fas fa-book"></i>
-                    <a href="/recipes" class="button">recipes</a>
+                    <a href="/recipes" class="button20">
+                        <p class="recc">
+                            recipes
+                        </p>
+                    </a>
                 </li>
                 <li>
                     <i class="fas fa-blog"></i>
-                    <a href="/share" class="button">blog</a>
+                    <a href="/blogs" class="button21">
+                        <p class="blogg">
+                            blog
+                        </p>
+                    </a>
                 </li>
+                <!--            <li>-->
+                <!--                <i class="fas fa-utensils"></i>-->
+                <!--                <a href="/cook" class="button">cook</a>-->
+                <!--            </li>-->
                 <li>
                     <i class="fas fa-cog"></i>
                     <a href="/settings" class="button">settings</a>
@@ -43,13 +61,13 @@
                     </form>
                 </div>
                 <div class="username">
-                     username <i class="fas fa-smile"></i>
+                    <p class="napis">ENJOY YOUR MEAL <i class="fas fa-smile"></i></p>
                 </div>
             </header>
             <section>
-                    <a href="/cook" class="buttons button1">WHAT TO COOK</a>
+                    <a href="/addRecipe" class="buttons button1">ADD RECIPE</a>
                     <a href="/recipes" class="buttons button2">RECIPES</a>
-                    <a href="/share" class="buttons button3">SHARE</a>
+                    <a href="/blogs" class="buttons button3">SHARE</a>
             </section>
         </main>
     </div>
