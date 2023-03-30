@@ -17,7 +17,7 @@ Docker
 
 The initial prototype of the app is saved as 'feedmi_prototipe.pdf'.
 
-[embed]https://github.com/maciekkk00/FEEDMI/blob/main/FEEDMI.pdf[/embed]
+https://github.com/maciekkk00/FEEDMI/blob/main/FEEDMI.pdf
 
 # ERD of the database:
 
